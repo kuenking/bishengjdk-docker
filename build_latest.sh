@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -o pipefail
 
 FILE_SITE=https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/
 DOCKER_IMAGE_PREFIX=wang1010q/bishengjdk
