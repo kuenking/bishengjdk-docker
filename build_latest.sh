@@ -3,7 +3,8 @@ set -o pipefail
 
 FILE_SITE=https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/
 DOCKER_IMAGE_PREFIX=wang1010q/bishengjdk
-jdk_versions=`curl $FILE_SITE | grep -o -E "jdk-(.*?)-" | awk '{sub(/.{1}$/,"")}1' |awk '{print substr($1,5)}' |sort -u`
+# github action use ubuntu vm, grep -P success
+jdk_versions=`curl -s $FILE_SITE | grep -o -P "jdk-(.*?)-" | awk '{sub(/.{1}$/,"")}1' |awk '{print substr($1,5)}' |sort -u`
 
 for version in $jdk_versions
 do
