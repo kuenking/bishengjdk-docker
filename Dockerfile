@@ -15,8 +15,7 @@
 FROM centos:7
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
 
-RUN yum makecach && yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar \
-    && yum update -y; yum clean all \
+RUN yum makecach && yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar && yum update -y && yum clean all
 
 ARG JAVA_VERSION
 ARG BINARY_URL="https://mirror.iscas.ac.cn/kunpeng/archive/compiler/bisheng_jdk/bisheng-jdk-${JAVA_VERSION}-linux-aarch64.tar.gz"
