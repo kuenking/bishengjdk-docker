@@ -14,8 +14,11 @@ The command '/bin/sh -c yum makecache && yum install -y tzdata openssl curl ca-c
 > build_latest.sh--->jdk_versions
 
 $ bash build_latest.sh
-> Successfully built b32b1efab579
-> Successfully tagged dockerimages/bishengjdk:8u292
+#success
+```
+Successfully built b32b1efab579
+Successfully tagged dockerimages/bishengjdk:8u292
+```
 
 >$ sudo docker images
 ```
@@ -23,11 +26,6 @@ REPOSITORY                TAG                 IMAGE ID            CREATED       
 dockerimages/bishengjdk   8u292               b32b1efab579        12 seconds ago      1.24GB
 csmith                    latest              e0f1c69fe499        5 months ago        850MB
 centos                    7                   e5df02c43685        9 months ago        301MB
-```
-#success
-```
-Successfully built b32b1efab579
-Successfully tagged dockerimages/bishengjdk:8u292
 ```
 
 $ sudo docker run -it dockerimages/bishengjdk:8u292 /bin/bash  
