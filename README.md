@@ -7,7 +7,7 @@ Cannot find a valid baseurl for repo: base/7/aarch64
 The command '/bin/sh -c yum makecache && yum install -y tzdata openssl curl ca-certificates fontconfig gzip tar && yum update -y && yum clean all' returned a non-zero code: 1
 ```
 > Dockerfile ---> ENV http_proxy='ip:port' https_proxy='pi:port'
-> 
+
 
 #2、 Only the mirror image of 8u292 is made here, if necessary, it can be modified to the required version number
 > build_latest.sh--->jdk_versions
