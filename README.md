@@ -1,12 +1,12 @@
 # bishengjdk-docker
 #1、If necessary, you need to set up a proxy, fill in the correct ip:port
-# Dockerfile ---> ENV http_proxy='ip:port' https_proxy='pi:port'
+#Dockerfile ---> ENV http_proxy='ip:port' https_proxy='pi:port'
 
 #2、 Only the mirror image of 8u292 is made here, if necessary, it can be modified to the required version number
-# build_latest.sh--->jdk_versions
+#build_latest.sh--->jdk_versions
 $ bash build_latest.sh
-# Successfully built b32b1efab579
-# Successfully tagged dockerimages/bishengjdk:8u292
+#Successfully built b32b1efab579
+#Successfully tagged dockerimages/bishengjdk:8u292
 
 $ sudo docker images
 REPOSITORY                TAG                 IMAGE ID            CREATED             SIZE
